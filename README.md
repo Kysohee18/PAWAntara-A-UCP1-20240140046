@@ -105,42 +105,32 @@ npm run dev
 ### Beranda (`GET /`)
 > Hero section, preview produk unggulan, dan info strip toko.
 
-![Beranda](docs/screenshots/beranda.png)
+<img width="1910" height="1678" alt="homepage" src="https://github.com/user-attachments/assets/48b9a087-2a40-418f-846f-30c881eb4128" />
+
 
 ### Daftar Produk (`GET /produk`)
 > Menampilkan semua produk dengan filter kategori dan pencarian.
 
-![Daftar Produk](docs/screenshots/produk.png)
+<img width="1910" height="1097" alt="produk" src="https://github.com/user-attachments/assets/6062deca-95dc-4c17-abbb-8042b01e3985" />
+
 
 ### Filter Produk (`GET /produk?kategori=Sembako`)
 > Hasil filter berdasarkan kategori "Sembako".
 
-![Filter Kategori](docs/screenshots/filter-kategori.png)
+<img width="1910" height="1506" alt="daftar-produk" src="https://github.com/user-attachments/assets/fdaf0e48-007e-47f9-b5e6-7898b8cefe2b" />
 
-### Filter Pencarian (`GET /produk?search=beras`)
-> Hasil pencarian produk dengan kata kunci "beras".
-
-![Filter Search](docs/screenshots/filter-search.png)
 
 ### Detail Produk (`GET /produk/1`)
 > Halaman detail lengkap 1 produk.
 
-![Detail Produk](docs/screenshots/detail-produk.png)
+<img width="1910" height="1097" alt="produk" src="https://github.com/user-attachments/assets/f14e3858-5a3c-4467-b524-e850ec3642de" />
 
-### Detail Produk — Tidak Ditemukan (`GET /produk/999`)
-> Penanganan ID produk yang tidak valid.
 
-![Produk Tidak Ditemukan](docs/screenshots/produk-not-found.png)
 
 ### Tanya AI (`GET /tanya-ai`)
 > Tampilan chat interaktif dengan form input pertanyaan.
 
-![Tanya AI](docs/screenshots/tanya-ai.png)
-
-### Navbar Mobile (Hamburger Menu)
-> Menu hamburger fungsional di tampilan mobile.
-
-![Hamburger Menu](docs/screenshots/hamburger-menu.png)
+<img width="1910" height="1228" alt="ai page" src="https://github.com/user-attachments/assets/0a519a62-cacd-4a62-a328-0c7fd2094ba5" />
 
 ---
 
