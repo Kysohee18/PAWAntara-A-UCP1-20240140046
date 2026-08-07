@@ -4,7 +4,7 @@
 
 Website & REST API untuk Toko Sembako Ariesta — UMKM Sembako & Kebutuhan Rumah Tangga.
 
-**Nama:** (isi nama Anda)  
+**Nama:** shahky yandhana putra 
 **NIM:** 20240140046  
 **Kelas:** A  
 **Mata Kuliah:** Pemrograman Aplikasi Web (PAW) — Semester Antara  
