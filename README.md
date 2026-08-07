@@ -97,3 +97,70 @@ npm run dev
 - [x] HTML5 semantik di semua halaman
 - [x] Form aksesibel (label terhubung, aria-label)
 - [x] Data produk dummy di file terpisah (8 produk)
+
+---
+
+## Screenshot Halaman
+
+### Beranda (`GET /`)
+> Hero section, preview produk unggulan, dan info strip toko.
+
+![Beranda](docs/screenshots/beranda.png)
+
+### Daftar Produk (`GET /produk`)
+> Menampilkan semua produk dengan filter kategori dan pencarian.
+
+![Daftar Produk](docs/screenshots/produk.png)
+
+### Filter Produk (`GET /produk?kategori=Sembako`)
+> Hasil filter berdasarkan kategori "Sembako".
+
+![Filter Kategori](docs/screenshots/filter-kategori.png)
+
+### Filter Pencarian (`GET /produk?search=beras`)
+> Hasil pencarian produk dengan kata kunci "beras".
+
+![Filter Search](docs/screenshots/filter-search.png)
+
+### Detail Produk (`GET /produk/1`)
+> Halaman detail lengkap 1 produk.
+
+![Detail Produk](docs/screenshots/detail-produk.png)
+
+### Detail Produk — Tidak Ditemukan (`GET /produk/999`)
+> Penanganan ID produk yang tidak valid.
+
+![Produk Tidak Ditemukan](docs/screenshots/produk-not-found.png)
+
+### Tanya AI (`GET /tanya-ai`)
+> Tampilan chat interaktif dengan form input pertanyaan.
+
+![Tanya AI](docs/screenshots/tanya-ai.png)
+
+### Navbar Mobile (Hamburger Menu)
+> Menu hamburger fungsional di tampilan mobile.
+
+![Hamburger Menu](docs/screenshots/hamburger-menu.png)
+
+---
+
+## Pengujian REST API via Postman
+
+> Panduan lengkap pengujian REST API tersedia di file **[postman.md](postman.md)**.
+
+### Quick Test — `GET /api/products`
+
+| Item | Detail |
+|------|--------|
+| **Method** | `GET` |
+| **URL** | `http://localhost:3000/api/products` |
+| **Expected Status** | `200 OK` |
+| **Response Format** | `{ "status": "success", "data": [...] }` |
+
+**Screenshot Postman:**
+
+![Postman GET Products](docs/screenshots/postman-get-products.png)
+
+**Screenshot Browser:**
+
+![Browser API Test](docs/screenshots/browser-api-products.png)
