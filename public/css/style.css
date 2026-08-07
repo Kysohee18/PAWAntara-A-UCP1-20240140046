@@ -443,3 +443,84 @@ main {
     font-size: 2.75rem;
   }
 }
+
+/* ============ LOGIN ============ */
+.login-card {
+  border: none;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(20, 83, 45, 0.08);
+}
+
+/* ============ DASHBOARD ============ */
+.dashboard-card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+  margin-bottom: 1.5rem;
+}
+
+.dashboard-table th {
+  font-weight: 600;
+  color: #14532d;
+  background-color: #f8f6f1;
+}
+
+.dashboard-table td {
+  vertical-align: middle;
+}
+
+/* ============ LOGIN (Sprint 2) ============ */
+.login-card {
+  border: none;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(20, 83, 45, 0.12);
+}
+
+.login-card .card-body {
+  padding: 2rem;
+}
+
+.login-card .btn-custom {
+  padding: 0.65rem;
+  font-size: 1rem;
+}
+
+/* ============ DASHBOARD (Sprint 2) ============ */
+.dashboard-card {
+  border: none;
+  border-radius: 14px;
+  box-shadow: 0 4px 14px rgba(20, 83, 45, 0.08);
+  overflow: hidden;
+}
+
+.dashboard-card .card-header {
+  border-bottom: 2px solid #e5e0d3;
+  padding: 1rem 1.25rem;
+}
+
+.dashboard-table th {
+  font-weight: 600;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: #6c757d;
+  white-space: nowrap;
+}
+
+.dashboard-table td {
+  vertical-align: middle;
+}
+
+.btn-edit,
+.btn-delete {
+  font-size: 0.8rem;
+  padding: 0.25rem 0.6rem;
+}
+
+/* ============ RESPONSIVE DASHBOARD ============ */
+@media (max-width: 767px) {
+  .dashboard-table th:nth-child(2),
+  .dashboard-table td:nth-child(2) {
+    display: none;
+  }
+}

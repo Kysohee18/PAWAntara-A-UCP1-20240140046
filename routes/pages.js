@@ -1,7 +1,15 @@
 const express = require('express');
 const router = express.Router();
 const products = require('../data/products');
+const { isAuthenticated } = require('../middleware/auth');
 
+// Middleware: pass user session to all views
+router.use((req, res, next) => {
+  res.locals.user = req.session ? req.session.user : null;
+  next();
+});
+
+// Beranda
 router.get('/', (req, res) => {
   const preview = products.slice(0, 4);
   res.render('index', {
@@ -10,6 +18,7 @@ router.get('/', (req, res) => {
   });
 });
 
+// Produk
 router.get('/produk', (req, res) => {
   const { kategori, search } = req.query;
   let result = [...products];
@@ -38,6 +47,7 @@ router.get('/produk', (req, res) => {
   });
 });
 
+// Detail Produk
 router.get('/produk/:id', (req, res) => {
   const id = Number(req.params.id);
   const product = products.find((p) => p.id === id);
@@ -55,8 +65,22 @@ router.get('/produk/:id', (req, res) => {
   });
 });
 
+// Tanya AI
 router.get('/tanya-ai', (req, res) => {
   res.render('tanya-ai', { title: 'Tanya AI' });
+});
+
+// Login
+router.get('/login', (req, res) => {
+  if (req.session && req.session.user) {
+    return res.redirect('/dashboard');
+  }
+  res.render('login', { title: 'Login' });
+});
+
+// Dashboard (protected)
+router.get('/dashboard', isAuthenticated, (req, res) => {
+  res.render('dashboard', { title: 'Dashboard Admin' });
 });
 
 module.exports = router;
