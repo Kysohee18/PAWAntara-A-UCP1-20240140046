@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Toko Sembako Ariesta - belanja beras, minyak, gula, telur dan kebutuhan rumah tangga lainnya"
+    />
+    <title><%= title %> | Toko Sembako Ariesta</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <%- include('partials/navbar') %>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-inner">
+          <article class="hero-text">
+            <h1>Belanja Sembako <span>Tanpa Ribet</span> di Ariesta</h1>
+            <p>
+              Beras, minyak goreng, gula, telur, dan kebutuhan rumah tangga
+              lainnya. Harga selalu ter-update, stok selalu jelas.
+            </p>
+            <a href="/produk" class="btn btn-custom">Lihat Produk</a>
+            <a href="/tanya-ai" class="btn btn-outline-light ms-2"
+              >Tanya AI</a
+            >
+          </article>
+          <figure class="hero-img">
+            <img
+              src="/images/hero-sembako.svg"
+              alt="Ilustrasi keranjang belanja berisi sembako"
+            />
+          </figure>
+        </div>
+      </section>
+
+      <section class="container py-5">
+        <header class="section-head">
+          <h2>Produk Unggulan</h2>
+          <p>Pilihan sembako terlaris di toko kami</p>
+        </header>
+        <div class="row g-4">
+          <% preview.forEach(function (p) { %>
+          <div class="col-12 col-md-6 col-lg-3">
+            <article class="card product-card h-100">
+              <div class="card-body">
+                <span class="badge category-badge"><%= p.category %></span>
+                <h3 class="h6 mt-2"><%= p.name %></h3>
+                <p class="price">Rp <%= p.price.toLocaleString('id-ID') %></p>
+                <p class="text-muted small mb-2">
+                  Stok: <%= p.stock %> &middot; per satuan
+                </p>
+                <a
+                  href="/produk/<%= p.id %>"
+                  class="btn btn-sm btn-outline-custom"
+                  >Detail</a
+                >
+              </div>
+            </article>
+          </div>
+          <% }) %>
+        </div>
+        <div class="text-center mt-4">
+          <a href="/produk" class="btn btn-custom">Lihat Semua Produk</a>
+        </div>
+      </section>
+
+      <aside class="info-strip">
+        <div class="container d-flex flex-wrap justify-content-center gap-4">
+          <div class="info-item">
+            <strong>07.00 - 20.00</strong>
+            <span>Buka Setiap Hari</span>
+          </div>
+          <div class="info-item">
+            <strong>Bisa Antar</strong>
+            <span>Area Yogyakarta</span>
+          </div>
+          <div class="info-item">
+            <strong>Harga Update</strong>
+            <span>Tiap Ada Perubahan</span>
+          </div>
+        </div>
+      </aside>
+    </main>
+
+    <%- include('partials/footer') %>
+
+    <script src="/js/main.js"></script>
+  </body>
+</html>

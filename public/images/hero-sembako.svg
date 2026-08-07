@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="360" viewBox="0 0 480 360" role="img" aria-label="Keranjang belanja berisi sembako">
+  <circle cx="240" cy="180" r="150" fill="#ffd23c" opacity="0.25"/>
+  <rect x="80" y="220" width="320" height="120" rx="24" fill="#8a5a2b"/>
+  <rect x="95" y="205" width="290" height="24" rx="12" fill="#6f4620"/>
+  <rect x="120" y="165" width="70" height="60" rx="8" fill="#fdf6e3" stroke="#d9cfb8"/>
+  <rect x="205" y="155" width="70" height="70" rx="8" fill="#fdf6e3" stroke="#d9cfb8"/>
+  <rect x="290" y="170" width="70" height="55" rx="8" fill="#fdf6e3" stroke="#d9cfb8"/>
+  <rect x="140" y="140" width="44" height="30" rx="6" fill="#ffc93c"/>
+  <rect x="200" y="130" width="44" height="30" rx="6" fill="#ffc93c"/>
+  <circle cx="150" cy="145" r="10" fill="#e8a33d"/>
+  <circle cx="220" cy="140" r="10" fill="#e8a33d"/>
+  <text x="155" y="200" font-family="system-ui" font-size="20" fill="#8a5a2b" text-anchor="middle" font-weight="bold">5 kg</text>
+  <text x="240" y="198" font-family="system-ui" font-size="16" fill="#8a5a2b" text-anchor="middle" font-weight="bold">Beras</text>
+  <text x="325" y="198" font-family="system-ui" font-size="16" fill="#8a5a2b" text-anchor="middle" font-weight="bold">Telur</text>
+  <rect x="420" y="60" width="46" height="52" rx="8" fill="#2c8f6f"/>
+  <rect x="426" y="46" width="34" height="18" rx="4" fill="#1f6f54"/>
+  <text x="443" y="92" font-family="system-ui" font-size="13" fill="#fff" text-anchor="middle">2L</text>
+</svg>
